@@ -1,13 +1,14 @@
-const signUpForm = document.querySelector("#signUpForm");
-
-signUpForm.addEventListener("submit", (e) => {
+loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
-
+  const signUpForm = document.querySelector("#signUpForm").value;
   const username = document.querySelector("#name").value;
   const email = document.querySelector("#email").value;
   const password = document.querySelector("#password").value;
 
-  localStorage.setItem("name", username);
-  localStorage.setItem("email", email);
-  localStorage.setItem("password", password);
+  const user = {
+    ID: username,
+    mail: email,
+    psw: password,
+  };
+  console.log("user added");
 });

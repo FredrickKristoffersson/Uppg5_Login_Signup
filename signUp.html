@@ -17,8 +17,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js" defer></script>
-    <script src="menu.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -82,8 +80,8 @@
               class="form-control mb-4"
               type="password"
               id="password"
-              pattern="(?=.*\d).{5,}"
-              title="Ditt lösenord behöver minst en siffra och totalt 5 tecken"
+              pattern="(?=.*\d)(?=.*[A-Z]).{5,}"
+              title="Siffra, stor bokstav, minst 5 tecken"
               placeholder="Minst 5 tecken"
               required
             />
