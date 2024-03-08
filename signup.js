@@ -5,11 +5,7 @@ signUpForm.addEventListener("submit", (e) => {
   const username = document.querySelector("#name").value;
   const email = document.querySelector("#email").value;
   const password = document.querySelector("#password").value;
-
-  const user = {
-    ID: username,
-    mail: email,
-    psw: password,
-  };
-  console.log("user added");
+  console.log(username);
+  console.log(email);
+  console.log(password);
 });
